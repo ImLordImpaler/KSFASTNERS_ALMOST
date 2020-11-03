@@ -1,0 +1,114 @@
+
+{% extends 'basic/new/product-base.html' %}
+
+ {% block product %}
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <hr/>
+  <main class="mt-5 pt-4 sample1">
+    <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <img src="{{obj.picture1.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Content-->
+          <div class="p-4">
+
+          <p class="lead font-weight-bold"></p>
+          <div class="section-title">
+          <h2 id='ourPolicy'>{{obj.name}}</h2>
+          <p></p>
+        </div>
+          
+          <br/>
+            <p class="lead font-weight-bold"></p>
+            <h4 class="my-4 h4">Description</h4>
+
+            <p>{{obj.desc}}</p>
+
+           
+
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <hr>
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+
+          <h4 class="my-4 h4">Additional information</h4>
+
+          <p>{{obj.desc}}</p>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <img src="{{obj.picture3.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <img src="{{obj.picture2.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <img src="{{obj.picture4.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+  </main>
+  <style>
+  .sample1{
+   background-image: url(https://i.pinimg.com/originals/78/9d/10/789d108ae0ba9a93266170031c109189.jpg);
+  background-repeat:repeat; 
+  }
+  #ourPolicy{
+    font-size: 25px;
+  }
+  </style>
+{% endblock %}
+
+
