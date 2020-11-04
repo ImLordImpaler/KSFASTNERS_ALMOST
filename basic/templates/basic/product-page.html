@@ -2,12 +2,13 @@
 {% extends 'basic/new/product-base.html' %}
 
  {% block product %}
- <br/>
+ 
+  <main class="mt-5 pt-4 sample1">
+  <br/>
  <br/>
  <br/>
  <br/>
  <hr/>
-  <main class="mt-5 pt-4 sample1">
     <div class="container dark-grey-text mt-5">
 
       <!--Grid row-->
@@ -35,9 +36,9 @@
           
           <br/>
             <p class="lead font-weight-bold"></p>
-            <h4 class="my-4 h4">Description</h4>
+            <h4 class="my-4 h4"><u>Description</u></h4>
 
-            <p>{{obj.desc}}</p>
+            <p id='niche'>{{obj.desc}}</p>
 
            
 
@@ -58,17 +59,23 @@
         <!--Grid column-->
         <div class="col-md-6 text-center">
 
-          <h4 class="my-4 h4">Additional information</h4>
-
-          <p>{{obj.desc}}</p>
-
-        </div>
+          <h4 class="my-4 h4"><u>Additional information</u></h4>
+ </div> 
+<!--          <p id='niche'>{{obj.desc}}</p>
+-->
+       
         <!--Grid column-->
 
       </div>
-      <!--Grid row-->
-
-      <!--Grid row-->
+      <style>
+      #niche:first-letter{
+        font-size: 200%;
+      }
+      #niche{
+        font-size: 21px;
+      }
+      </style>
+     
       <div class="row wow fadeIn">
 
         <!--Grid column-->

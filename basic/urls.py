@@ -10,5 +10,6 @@ urlpatterns = (
   
     path('product/<str:pk>/' , views.product , name='product'),
     path('callback' , views.callBack , name='callBack'),
-    path('policy' , views.policy , name='policy')
+    path('policy' , views.policy , name='policy'),
+    path('about' , views.about , name='about')
 )

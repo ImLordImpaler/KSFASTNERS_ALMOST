@@ -85,5 +85,7 @@ def policy(request):
     }
     return render(request , 'basic/new/policy.html' , params)
 
+def about(request):
+    return render(request , 'basic/new/about-page.html')
 
     
