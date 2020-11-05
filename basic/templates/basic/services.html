@@ -8,48 +8,15 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
-            <div class="icon-box">
-              <i class="fas fa-arrow-right mr-2"> </i>
-            <h4><a href="#">BellPipe</a></h4>
-              <p>This is an example of sample text. Like for example. I'm rachit. And you're.... um you</p>
+        {% for i in obj %}
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="fas fa-arrow-right mr-2"> </i>
+              <h4><a href="{% url 'product' i.id%}">{{i.name}}</a></h4>
+                <p>{{i.desc}}</p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="fas fa-arrow-right mr-2"> </i>
-              <h4><a href="#">Buckles</a></h4>
-              <p>This is an example of sample text. Like for example. I'm rachit. And you're.... um you</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="fas fa-arrow-right mr-2"> </i>
-              <h4><a href="#">Downhole Button</a></h4>
-              <p>This is an example of sample text. Like for example. I'm rachit. And you're.... um you</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-             <i class="fas fa-arrow-right mr-2"> </i>
-              <h4><a href="#">Sewing Buttons</a></h4>
-              <p>This is an example of sample text. Like for example. I'm rachit. And you're.... um you</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="fas fa-arrow-right mr-2"> </i>
-              <h4><a href="#">Stopper</a></h4>
-              <p>This is an example of sample text. Like for example. I'm rachit. And you're.... um you</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="fas fa-arrow-right mr-2"> </i>
-              <h4><a href="#">D-Rings</a></h4>
-              <p>This is an example of sample text. Like for example. I'm rachit. And you're.... um you</p>
-            </div>
-          </div>
+        {% endfor %}
         </div>
 
       </div>
