@@ -128,10 +128,10 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'rachit.saxena42@gmail.com'
 EMAIL_HOST_PASSWORD = 'suspectshot69*'
 
-AWS_ACCESS_KEY_ID = 'AKIAY2U4JMFJSRFIFJMS'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'ksfastners-static'
-AWS_S3_CUSTOM_DOMAIN = 'd3kkena8nwipem.cloudfront.net'
+AWS_ACCESS_KEY_ID = 'AKIARZJ7XDEUD5UWYC6H'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'graphics-buckets'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
